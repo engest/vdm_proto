@@ -1,10 +1,72 @@
 {
   "variant": {
-    "label": "Release",
+    "label": "Debug",
     "keywordSettings": {
-      "buildType": "release"
+      "buildType": "debug"
     },
-    "description": "Enable optimizations, omit debug info"
+    "description": "Emit debug information without performing optimizations"
   },
-  "activeEnvironments": []
+  "activeEnvironments": [],
+  "codeModel": {
+    "configurations": [
+      {
+        "name": "Debug",
+        "projects": [
+          {
+            "buildDirectory": "/devel/users/engest/systemc/work/projects/vdm_proto/build",
+            "name": "vdm_proto",
+            "sourceDirectory": "/devel/users/engest/systemc/work/projects/vdm_proto",
+            "targets": [
+              {
+                "artifacts": [
+                  "/devel/users/engest/systemc/work/projects/vdm_proto/build/libvdm_proto.so"
+                ],
+                "buildDirectory": "/devel/users/engest/systemc/work/projects/vdm_proto/build",
+                "fileGroups": [
+                  {
+                    "compileFlags": "-g -fPIC  ",
+                    "defines": [
+                      "vdm_proto_EXPORTS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "/devel/users/engest/systemc/local/include"
+                      },
+                      {
+                        "path": "/devel/users/engest/systemc/local/include/sysc"
+                      },
+                      {
+                        "path": "/devel/users/engest/systemc/local/include/tlm_core"
+                      },
+                      {
+                        "path": "/devel/users/engest/systemc/local/include/tlm_utils"
+                      },
+                      {
+                        "path": "/devel/users/engest/systemc/work/projects/vdm_proto/inc"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "src/vdm_proto.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "libvdm_proto.so",
+                "linkLibraries": "-Wl,-rpath,/devel/users/engest/systemc/local/lib-linux64: -lsystemc-2.3.1",
+                "linkPath": "-L/devel/users/engest/systemc/local/lib-linux64",
+                "linkerLanguage": "CXX",
+                "name": "vdm_proto",
+                "sourceDirectory": "/devel/users/engest/systemc/work/projects/vdm_proto",
+                "type": "SHARED_LIBRARY"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "cookie": "0.5592391334226179",
+    "inReplyTo": "codemodel",
+    "type": "reply"
+  }
 }
