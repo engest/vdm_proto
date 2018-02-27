@@ -1,0 +1,1 @@
+cmake -B`pwd`/build_debug -H`pwd` -DCMAKE_BUILD_TYPE=Debug
