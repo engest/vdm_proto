@@ -17,44 +17,51 @@
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
-            }
+            },
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ]
         },
         {
             "name": "Linux",
             "includePath": [
                 "${workspaceRoot}",
                 "${workspaceRoot}/inc",
-                "/usr/include/x86_64-linux-gnu/c++/5",
-                "/usr/include/c++/5",
+                "/usr/include/x86_64-linux-gnu/c++/7",
+                "/usr/include/c++/7",
                 "/usr/local/include",
-                "/usr/lib/clang/3.8.0/include",
+                "/usr/lib/clang/6.0.0/include",
                 "/usr/include/x86_64-linux-gnu",
                 "/usr/include",
-                "/devel/users/engest/systemc/local/include",
-                "/devel/users/engest/systemc/local/include/sysc",
-                "/devel/users/engest/systemc/local/include/tlm_core",
-                "/devel/users/engest/systemc/local/include/tlm_utils"
+                "/home/engest/devel/systemc/local/include",
+                "/home/engest/devel/systemc/local/include/sysc",
+                "/home/engest/devel/systemc/local/include/tlm_core",
+                "/home/engest/devel/systemc/local/include/tlm_utils"
             ],
             "defines": [],
             "intelliSenseMode": "clang-x64",
             "browse": {
                 "path": [
-                    "/usr/include/x86_64-linux-gnu/c++/5",
-                    "/usr/include/c++/5",
+                    "/usr/include/x86_64-linux-gnu/c++/7",
+                    "/usr/include/c++/7",
                     "/usr/local/include",
-                    "/usr/lib/clang/3.8.0/include",
+                    "/usr/lib/clang/6.0.0/include",
                     "/usr/include/x86_64-linux-gnu",
                     "/usr/include",
-                    "${workspaceRoot}/inc",
-                    "/devel/users/engest/systemc/local/include",
-                    "/devel/users/engest/systemc/local/include/sysc",
-                    "/devel/users/engest/systemc/local/include/tlm_core",
-                    "/devel/users/engest/systemc/local/include/tlm_utils",
+                    "${workspaceRoot}/i nc",
+                    "/home/engest/devel/systemc/local/include",
+                    "/home/engest/devel/systemc/local/include/sysc",
+                    "/home/engest/devel/systemc/local/include/tlm_core",
+                    "/home/engest/devel/systemc/local/include/tlm_utils",
                     "${workspaceRoot}"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
-            }
+            },
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
         },
         {
             "name": "Win32",
@@ -77,5 +84,5 @@
             }
         }
     ],
-    "version": 2
+    "version": 4
 }

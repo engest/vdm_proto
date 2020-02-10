@@ -18,8 +18,14 @@ void vdm_proto::b_transport(tlm_generic_payload & trans, sc_time & delay) {
                 data_store.push_back((trans.get_data_ptr())[i]);
             }
         }
-
-
     }
+}
 
+void decode_data(unsigned char * data, unsigned int len) {
+    unsigned int header_len = 0;
+    unsigned int footer_len = 0;
+    unsigned int payload_len = 0;
+    if (len > 0)
+        header_len = data[0];
+    unsigned char header[header_len];
 }
