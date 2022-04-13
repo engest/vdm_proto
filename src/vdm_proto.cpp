@@ -1,8 +1,7 @@
 #include "vdm_proto.h"
 
 vdm_proto::vdm_proto(sc_module_name name) : sc_module(name)
-                                          , tsocket("tsocket")
-                                          , isocket("tsocket") {
+                                          , tsocket("tsocket") {
     tsocket.register_b_transport(this, &vdm_proto::b_transport);
 }
 

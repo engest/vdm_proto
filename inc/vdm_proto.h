@@ -15,7 +15,6 @@ class vdm_proto : public sc_module
     void b_transport(tlm_generic_payload & trans, sc_time & delay);
 
     simple_target_socket<vdm_proto> tsocket;
-    simple_initiator_socket<vdm_proto> isocket;
 
     sc_event start;
     vector<unsigned char> data_store;

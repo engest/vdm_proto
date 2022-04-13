@@ -1,8 +1,0 @@
-{
-    "files.associations": {
-        "tlm": "cpp",
-        "cassert": "cpp",
-        "systemc": "cpp"
-    },
-    "cmake.configureOnOpen": false
-}

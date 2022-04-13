@@ -1,6 +1,5 @@
 cmake_minimum_required (VERSION 2.6)
-set (CMAKE_C_COMPILER "/usr/bin/clang")
-set (CMAKE_CXX_COMPILER "/usr/bin/clang++")
+include(CMakeCommon.txt)
 include(../systemc_cmake.txt)
 project (vdm_proto)
 include(../systemc_model_cmake.txt)
