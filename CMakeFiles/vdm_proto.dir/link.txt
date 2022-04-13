@@ -1,1 +1,0 @@
-/usr/bin/clang++ -fPIC   -shared -Wl,-soname,libvdm_proto.so -o libvdm_proto.so CMakeFiles/vdm_proto.dir/src/vdm_proto.cpp.o   -L/home/engest/devel/systemc/local/lib-linux64  -Wl,-rpath,/home/engest/devel/systemc/local/lib-linux64: -lsystemc-2.3.1 
