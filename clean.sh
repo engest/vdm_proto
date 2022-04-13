@@ -1,1 +1,1 @@
-rm -rf build_* lib
+rm -rf build_* lib bin
