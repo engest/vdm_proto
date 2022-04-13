@@ -1,3 +1,4 @@
 build_*/
 lib/
+bin/
 .vscode/.cmaketools.json
