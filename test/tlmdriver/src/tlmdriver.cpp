@@ -1,7 +1,6 @@
 #include "tlmdriver.h"
 
 tlmdriver::tlmdriver(sc_module_name name) : isocket("isocket") {
-    SC_HAS_PROCESS(tlmdriver);
     SC_THREAD(drive);
     cout << "Greatings from driver\n";
 }
