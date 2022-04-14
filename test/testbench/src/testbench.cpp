@@ -4,7 +4,8 @@
 
 testbench::testbench(sc_module_name name) {
     vdm_proto device("device");
-    tlmdriver drive("driver");
-
-    drive.isocket.bind(device.tsocket);
+    tlmdriver driver("driver");
+    cout << "Greetings from testbench\n";
+    //driver.isocket(device.tsocket);
+    cout << "Post bind\n";
 }
