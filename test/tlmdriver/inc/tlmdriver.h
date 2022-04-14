@@ -14,8 +14,8 @@ class tlmdriver : public sc_module
 public:
     tlmdriver(sc_module_name name);
     simple_initiator_socket<tlmdriver> isocket;
-
-private:
+    sc_event trigger;
+    void start_of_simulation();
     void drive();
 };
 #endif
