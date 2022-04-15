@@ -17,6 +17,5 @@ public:
     sc_event trigger;
     void start_of_simulation();
     void drive();
-    SC_HAS_PROCESS(tlmdriver);
 };
 #endif
