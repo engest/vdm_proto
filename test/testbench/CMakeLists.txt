@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 2.6)
 include(../../CMakeCommon.txt)
-include(../../../systemc_cmake.txt)
+include(../../systemc_cmake.txt)
 project (testbench)
 include_directories(${PROJECT_SOURCE_DIR}/inc)
 include_directories("${PROJECT_SOURCE_DIR}/../../inc")

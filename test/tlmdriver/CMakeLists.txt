@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 2.6)
 include(../../CMakeCommon.txt)
-include(../../../systemc_cmake.txt)
+include(../../systemc_cmake.txt)
 project (tlmdriver)
-include(../../../systemc_model_cmake.txt)
+include(../../systemc_model_cmake.txt)
