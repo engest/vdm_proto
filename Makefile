@@ -17,7 +17,7 @@ OBJECTS := src/vdm_proto.o
 CXX ?= g++
 CPPFLAGS ?= -g -fPIC $(INC_DIRS)
 
-rebuildables=$(OBJECTS) $(TARGET) $(TARGET_DIR) $(TARGET_BASE)
+rebuildables=$(OBJECTS) $(TARGET) $(TARGET_DIR) $(TARGET_BASE) doxygen
 
 all: $(TARGET)
 
@@ -28,5 +28,9 @@ $(TARGET): $(OBJECTS) $(INC) $(TARGET_DIR)
 	g++ -shared -o $@ $<
 
 .PHONEY:
+
+doc: Doxyfile
+	doxygen
+
 clean:
 	rm -rf $(rebuildables)
