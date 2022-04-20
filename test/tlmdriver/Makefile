@@ -1,7 +1,6 @@
 BUILD_TYPE ?= Debug
 
-SYSTEMC_VERSION ?= 2.3.1
-SYSTEMC_HOME ?= /home/engest/devel/systemc/$(SYSTEMC_VERSION)/local
+include ../../config.mk
 
 TARGET_BASE := lib
 TARGET_DIR := $(TARGET_BASE)/$(BUILD_TYPE)
