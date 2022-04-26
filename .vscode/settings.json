@@ -1,3 +1,4 @@
 {
-    "cmake.configureOnOpen": false
+    "cmake.configureOnOpen": true,
+    "doxygen_runner.configuration_file_override": "${workspaceFolder}/Doxyfile"
 }
