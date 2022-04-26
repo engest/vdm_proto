@@ -1,2 +1,1 @@
-cmake --build `pwd`/build_release --target all --config Release --
-cmake --build `pwd`/build_release --target install --config Release --
+/usr/bin/cmake --build `pwd`/build --config Release --target all --

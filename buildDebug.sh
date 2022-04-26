@@ -1,2 +1,1 @@
-cmake --build `pwd`/build_debug --target all --config Debug --
-cmake --build `pwd`/build_debug --target install --config Debug --
+/usr/bin/cmake --build `pwd`/build --config Debug --target all --

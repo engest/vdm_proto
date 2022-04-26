@@ -1,1 +1,1 @@
-cmake -B`pwd`/build_debug -H`pwd` -DCMAKE_BUILD_TYPE=Debug -GNinja
+/usr/bin/cmake --no-warn-unused-cli -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE -DCMAKE_BUILD_TYPE:STRING=Debug -DCMAKE_C_COMPILER:FILEPATH=/bin/clang-10 -DCMAKE_CXX_COMPILER:FILEPATH=/bin/clang++-10 -S`pwd` -B`pwd`/build -G Ninja
