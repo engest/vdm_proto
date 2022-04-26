@@ -58,3 +58,27 @@ include(systemc.cmake)
 ####################
 add_subdirectory("test/tlmdriver")
 add_subdirectory("test/testbench")
+
+####################
+#   Doxygen        #
+####################
+find_package(Doxygen
+             REQUIRED dot
+             OPTIONAL_COMPONENTS mscgen dia)
+
+
+set(DOXYGEN_SOURCE_BROWSER YES)
+set(DOXYGEN_USE_MDFILE_AS_MAINPAGE "${PROJECT_SOURCE_DIR}/README.md")
+set(DOXYGEN_EXTRACT_ALL YES)
+set(DOXYGEN_EXTRACT_PRIVATE YES)
+
+doxygen_add_docs(dox
+    "${PROJECT_SOURCE_DIR}/inc"
+    "${PROJECT_SOURCE_DIR}/test/tlmdriver/inc"
+    "${PROJECT_SOURCE_DIR}/test/testbench/inc"
+    "${PROJECT_SOURCE_DIR}/src"
+    "${PROJECT_SOURCE_DIR}/test/tlmdriver/src"
+    "${PROJECT_SOURCE_DIR}/test/testbench/src"
+    "${PROJECT_SOURCE_DIR}/README.md"
+    ALL
+)
