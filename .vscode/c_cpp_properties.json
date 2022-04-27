@@ -1,6 +1,6 @@
 {
     "env": {
-        "SYSTEMC_VERSION": "2.3.1",
+        "SYSTEMC_VERSION": "2.3.3",
         "SYSTEMC_HOME": "${env:HOME}/devel/systemc/${SYSTEMC_VERSION}/local"
     },
     "configurations": [
