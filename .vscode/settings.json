@@ -1,4 +1,6 @@
 {
     "cmake.configureOnOpen": true,
+    "cmake.configureEnvironment": {"SYSTEMC_VERSION" : "2.3.3", "SYSTEMC_HOME" : "/home/engest/devel/systemc/2.3.3/local"},
+    "cmake.buildEnvironment": {"SYSTEMC_VERSION" : "2.3.3", "SYSTEMC_HOME" : "/home/engest/devel/systemc/2.3.3/local"},
     "doxygen_runner.configuration_file_override": "${workspaceFolder}/Doxyfile"
 }
