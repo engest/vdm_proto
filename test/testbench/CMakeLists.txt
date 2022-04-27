@@ -47,7 +47,7 @@ include_directories("${PROJECT_SOURCE_DIR}/../../inc")
 include_directories("${PROJECT_SOURCE_DIR}/../../test/tlmdriver/inc")
 link_directories("${PROJECT_SOURCE_DIR}/lib/${CMAKE_BUILD_TYPE}")
 link_directories("${PROJECT_SOURCE_DIR}/lib/test/tlmdriver/lib/${CMAKE_BUILD_TYPE}")
-target_link_libraries(${LOCAL_PROJECT_NAME} systemc-2.3.1)
+target_link_libraries(${LOCAL_PROJECT_NAME} systemc)
 target_link_libraries(${LOCAL_PROJECT_NAME} vdm_proto)
 target_link_libraries(${LOCAL_PROJECT_NAME} tlmdriver)
 
