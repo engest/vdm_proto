@@ -65,6 +65,31 @@ public:
      */
     void drive();
 private:
+    /**
+     * @brief TLM2 transaction object
+     * 
+     * Will reuse this pointer.
+     */
     tlm_generic_payload *gp;
+
+    sc_time gp_delay;
+
+    /**
+     * @brief Simple 32bit read transaction
+     * 
+     * @param data pointer to data from caller
+     * @param address physical address for read
+     * @return tlm_response_status TLM2 response code
+     */
+    tlm_response_status read32(unsigned char * data, uint64_t address);
+
+    /**
+     * @brief Simple 32bit write transaction
+     * 
+     * @param data pointer to data from caller
+     * @param address physical address for write
+     * @return tlm_response_status TLM2 response code
+     */
+    tlm_response_status write32(unsigned char * data, uint64_t address);
 };
 #endif

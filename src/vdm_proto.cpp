@@ -12,5 +12,11 @@ void vdm_proto::b_transport(tlm_generic_payload & trans, sc_time & delay) {
         cout << "VDM received READ transation at " << sc_time_stamp() << "\n";
     } else { // WRITE
         cout << "VDM received WRITE transation at " << sc_time_stamp() << "\n";
+        cout << "    address=" << hex << trans.get_address() << "\n";
+        cout << "    data:\n";
+        unsigned char * data = trans.get_data_ptr();
+        for (int i = 0; i < 4; i++) {
+            cout << "         [" << i << "]=" << (unsigned int)data[i] << "\n"; 
+        }
     }
 }
