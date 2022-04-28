@@ -196,22 +196,22 @@ Greetings from driver
 Greetings from testbench
 Post bind
 Pre sc_start()
-VDM received WRITE transation at 0 s
+VDM received WRITE transaction at 0 s
     address=deadbeef
     data:
          [0]=ee
          [1]=ff
          [2]=c0
          [3]=ad
-VDM received READ transation at 0 s
-VDM received WRITE transation at 10 ns
+VDM received READ transaction at 0 s
+VDM received WRITE transaction at 10 ns
     address=deadbeef
     data:
          [0]=ee
          [1]=ff
          [2]=c0
          [3]=ad
-VDM received READ transation at 10 ns
+VDM received READ transaction at 10 ns
 ...
 ```
 The ellipsis there implies it keeps going for a few rounds. I will update this output as the project progresses.
