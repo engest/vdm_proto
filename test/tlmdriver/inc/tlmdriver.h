@@ -64,5 +64,7 @@ public:
      * This is used as an SC_THREAD. It will be the main thread of initiating transactions and consuming time.
      */
     void drive();
+private:
+    tlm_generic_payload *gp;
 };
 #endif
