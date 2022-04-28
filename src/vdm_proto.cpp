@@ -9,8 +9,8 @@ vdm_proto::vdm_proto(sc_module_name name) : sc_module(name)
 
 void vdm_proto::b_transport(tlm_generic_payload & trans, sc_time & delay) {
     if (trans.is_read()) { // READ
-        cout << "VDM received READ transation";
+        cout << "VDM received READ transation at " << sc_time_stamp() << "\n";
     } else { // WRITE
-        cout << "VDM received WRITE transation";
+        cout << "VDM received WRITE transation at " << sc_time_stamp() << "\n";
     }
 }
