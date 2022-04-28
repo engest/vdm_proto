@@ -119,7 +119,7 @@ You can set the build type as Debug or Release in the square brackets after CMak
 To run the code you click on the "play" triangle and it will run the main program which is in the square brackets next to the run button. It should be set to \[vdm_main].
 
 ## Building and Running on the Command Line (CLI)
-No matter how you are using the command line to build and run, you will definitely need to set your environment variables for SystemC/TLM2: [SYSTEM_VERSION and SYSTEMC_HOME](#setup-environment-for-systemctlm2).
+No matter how you are using the command line to build and run, you will definitely need to set your environment variables for SystemC/TLM2: [SYSTEMC_VERSION and SYSTEMC_HOME](#setup-environment-for-systemctlm2).
 ### Using CLI CMake
 There are convenience scripts that are designed after the exact same commands as the VS Code CMake operations. These scripts are:
 
@@ -184,3 +184,37 @@ The Testbench is the "top" of the design, which instantiates the VDM Proto model
 > cd ../testbench
 > make
 ```
+
+## Running Output
+No matter how you choose to run this project, the output should look the same. It should look like this simple output:
+```
+        SystemC 2.3.3-Accellera --- Apr 15 2022 15:50:49
+        Copyright (c) 1996-2018 by all Contributors,
+        ALL RIGHTS RESERVED
+Greatings from vdm_proto
+Greatings from driver
+Greetings from testbench
+Post bind
+Pre sc_start()
+VDM received WRITE transation at 0 s
+    address=deadbeef
+    data:
+         [0]=ee
+         [1]=ff
+         [2]=c0
+         [3]=ad
+VDM received READ transation at 0 s
+VDM received WRITE transation at 10 ns
+    address=deadbeef
+    data:
+         [0]=ee
+         [1]=ff
+         [2]=c0
+         [3]=ad
+VDM received READ transation at 10 ns
+...
+```
+The ellipsis there implies it keeps going for a few rounds. I will update this output as the project progresses.
+
+# Communication
+You can communicate with me regarding this project on the [Matrix channel](https://matrix.to/#/#systemctlm2:matrix.org) in the room [VDM Proto](https://matrix.to/#/#vdm-proto:matrix.org) (vdm-proto). 
