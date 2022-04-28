@@ -26,7 +26,7 @@ I prefer to have the following packages installed on Ubuntu, but really only the
 > sudo apt -y install build-essential clamng cmake ninja-build graphviz mscgen
 ```
 ## Compiler
-I prefer to use clang. There is plenty to hear about it that is good. I like it for it's error messages...probably because I make a lot of mistakes. To set the clang compiler (after installing it, of course):
+I prefer to use clang. There is plenty to hear about it that is good. I like it for its error messages...probably because I make a lot of mistakes. To set the clang compiler (after installing it, of course):
 ```sh
 > export CC=clang
 > export CXX=clang++
