@@ -3,7 +3,7 @@
 tlmdriver::tlmdriver(sc_module_name name) : isocket("isocket") {
     SC_HAS_PROCESS(tlmdriver);
     SC_THREAD(drive);
-    cout << "Greatings from driver\n";
+    cout << "Greetings from driver\n";
     gp = new tlm_generic_payload();
     gp_delay = sc_time(0, SC_NS);
 }

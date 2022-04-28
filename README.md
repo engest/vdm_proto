@@ -191,8 +191,8 @@ No matter how you choose to run this project, the output should look the same. I
         SystemC 2.3.3-Accellera --- Apr 15 2022 15:50:49
         Copyright (c) 1996-2018 by all Contributors,
         ALL RIGHTS RESERVED
-Greatings from vdm_proto
-Greatings from driver
+Greetings from vdm_proto
+Greetings from driver
 Greetings from testbench
 Post bind
 Pre sc_start()
