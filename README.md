@@ -53,7 +53,7 @@ For this package, you should set environment variables SYSTEMC_VERSION and SYSTE
 ```
 Yes, that means set SYSTEMC_HOME to what you set for the --prefix in your [SystemC Build](#install-systemctlm2). For those who will be using VS Code, there will be [instructions](#vs-code-settings) to set this in your c_cpp_properties.json and settings.json files - for convenience in using the VS Code Cmake GUI elements for build and run.
 ## VS Code
-I prefer to use VS Code. But I have an entire career of using vim, Eclipse, and other editors and IDEs, so feel free to use whatever you are most comfortable with. There is currently a lot of momentum and convenience in using VS Code and its rich plugin ecosystem. So this educational package will be based on VS Code, but will not require it. Go to https://code.visualstudio.com/download to download for your system.
+I prefer to use VS Code. But I have an entire career of using vim, Eclipse, and other editors and IDEs, so feel free to use whatever you are most comfortable with. There is currently a lot of momentum and convenience in using VS Code and its rich plugin ecosystem. So this educational project will be based on VS Code, but will not require it. Go to https://code.visualstudio.com/download to download for your system.
 
 ### VS Code Plugins (Relevant to this project)
 - C/C++ Extension Pack (Microsoft)
@@ -95,3 +95,15 @@ Change the values for SYSTEMC_VERSION and SYSTEMC_HOME for where you have instal
     "version": 4
 }
 ```
+#### SETTINGS.JSON
+Change the values for SYSTEMC_VERSION and SYSTEMC_HOME for where you have installed it to.
+```json
+{
+    "cmake.configureOnOpen": true,
+    "cmake.configureEnvironment": {"SYSTEMC_VERSION" : "2.3.3", "SYSTEMC_HOME" : "/home/engest/devel/systemc/2.3.3/local"},
+    "cmake.buildEnvironment": {"SYSTEMC_VERSION" : "2.3.3", "SYSTEMC_HOME" : "/home/engest/devel/systemc/2.3.3/local"},
+    "doxygen_runner.configuration_file_override": "${workspaceFolder}/Doxyfile"
+}
+```
+
+As this point everything should be in place to use this project.
