@@ -12,14 +12,14 @@ INC_DIRS += -I$(SYSTEMC_HOME)/include/tlm_utils
 INC_DIRS += -I../../inc
 INC_DIRS += -I../tlmdriver/inc
 INC_DIRS += -I./inc
-LIBS += -L$(SYSTEMC_HOME)/lib -lsystemc-$(SYSTEMC_VERSION)
+LIBS += -L$(SYSTEMC_HOME)/lib -lsystemc
 LIBS += -L../../lib/$(BUILD_TYPE) -lvdm_proto
 LIBS += -L../tlmdriver/lib/$(BUILD_TYPE) -ltlmdriver
 
 OBJECTS := src/testbench.o src/vdm_main.o
 
 CXX ?= g++
-CPPFLAGS ?= -g -fPIC $(INC_DIRS)
+CPPFLAGS ?= -std=c++11 -g -fPIC $(INC_DIRS)
 
 
 rebuildables=$(OBJECTS) $(TARGET) $(TARGET_DIR) $(TARGET_BASE)

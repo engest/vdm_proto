@@ -14,7 +14,7 @@ INC_DIRS += -I./inc
 OBJECTS := src/tlmdriver.o
 
 CXX ?= g++
-CPPFLAGS ?= -g -fPIC $(INC_DIRS)
+CPPFLAGS ?= -std=c++11 -g -fPIC $(INC_DIRS)
 
 
 rebuildables=$(OBJECTS) $(TARGET) $(TARGET_DIR) $(TARGET_BASE)
