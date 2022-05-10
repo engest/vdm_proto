@@ -23,7 +23,7 @@ I prefer to have the following packages installed on Ubuntu, but really only the
 - graphviz
 - mscgen
 ```sh
-> sudo apt -y install build-essential clamng cmake ninja-build graphviz mscgen
+> sudo apt -y install build-essential clang cmake ninja-build graphviz mscgen
 ```
 ## Compiler
 I prefer to use clang. There is plenty to hear about it that is good. I like it for its error messages...probably because I make a lot of mistakes. To set the clang compiler (after installing it, of course):
@@ -101,8 +101,7 @@ Change the values for SYSTEMC_VERSION and SYSTEMC_HOME for where you have instal
 {
     "cmake.configureOnOpen": true,
     "cmake.configureEnvironment": {"SYSTEMC_VERSION" : "2.3.3", "SYSTEMC_HOME" : "/home/engest/devel/systemc/2.3.3/local"},
-    "cmake.buildEnvironment": {"SYSTEMC_VERSION" : "2.3.3", "SYSTEMC_HOME" : "/home/engest/devel/systemc/2.3.3/local"},
-    "doxygen_runner.configuration_file_override": "${workspaceFolder}/Doxyfile"
+    "cmake.buildEnvironment": {"SYSTEMC_VERSION" : "2.3.3", "SYSTEMC_HOME" : "/home/engest/devel/systemc/2.3.3/local"}
 }
 ```
 
